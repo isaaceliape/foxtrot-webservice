@@ -1,0 +1,12 @@
+C:\Users\Érika\Documents\GitHub\foxtrot-webservice\Foxtrot\Foxtrot\bin\Foxtrot.dll.config
+C:\Users\Érika\Documents\GitHub\foxtrot-webservice\Foxtrot\Foxtrot\bin\Foxtrot.dll
+C:\Users\Érika\Documents\GitHub\foxtrot-webservice\Foxtrot\Foxtrot\bin\Foxtrot.pdb
+C:\Users\Érika\Documents\GitHub\foxtrot-webservice\Foxtrot\Foxtrot\bin\EntityFramework.dll
+C:\Users\Érika\Documents\GitHub\foxtrot-webservice\Foxtrot\Foxtrot\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Érika\Documents\GitHub\foxtrot-webservice\Foxtrot\Foxtrot\bin\EntityFramework.xml
+C:\Users\Érika\Documents\GitHub\foxtrot-webservice\Foxtrot\Foxtrot\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\Érika\Documents\GitHub\foxtrot-webservice\Foxtrot\Foxtrot\obj\Debug\Foxtrot.dll
+C:\Users\Érika\Documents\GitHub\foxtrot-webservice\Foxtrot\Foxtrot\obj\Debug\Foxtrot.pdb
+C:\Users\Érika\Documents\GitHub\foxtrot-webservice\Foxtrot\Foxtrot\obj\Debug\Foxtrot.csprojResolveAssemblyReference.cache
+C:\Users\Érika\Documents\GitHub\foxtrot-webservice\Foxtrot\Foxtrot\bin\Newtonsoft.Json.dll
+C:\Users\Érika\Documents\GitHub\foxtrot-webservice\Foxtrot\Foxtrot\bin\Newtonsoft.Json.xml

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FoxtrotModelStoreContainer" CdmEntityContainer="FoxtrotEntities">
+    <EntitySetMapping Name="Aplicacao">
+      <EntityTypeMapping TypeName="FoxtrotModel.Aplicacao">
+        <MappingFragment StoreEntitySet="Aplicacao">
+          <ScalarProperty Name="idAplicacao" ColumnName="idAplicacao" />
+          <ScalarProperty Name="DescAplicacao" ColumnName="DescAplicacao" />
+          <ScalarProperty Name="TipoAplicacao" ColumnName="TipoAplicacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categoria">
+      <EntityTypeMapping TypeName="FoxtrotModel.Categoria">
+        <MappingFragment StoreEntitySet="Categoria">
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="nomeCategoria" ColumnName="nomeCategoria" />
+          <ScalarProperty Name="descCategoria" ColumnName="descCategoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cliente">
+      <EntityTypeMapping TypeName="FoxtrotModel.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="nomeCompletoCliente" ColumnName="nomeCompletoCliente" />
+          <ScalarProperty Name="emailCliente" ColumnName="emailCliente" />
+          <ScalarProperty Name="senhaCliente" ColumnName="senhaCliente" />
+          <ScalarProperty Name="CPFCliente" ColumnName="CPFCliente" />
+          <ScalarProperty Name="celularCliente" ColumnName="celularCliente" />
+          <ScalarProperty Name="telComercialCliente" ColumnName="telComercialCliente" />
+          <ScalarProperty Name="telResidencialCliente" ColumnName="telResidencialCliente" />
+          <ScalarProperty Name="dtNascCliente" ColumnName="dtNascCliente" />
+          <ScalarProperty Name="recebeNewsLetter" ColumnName="recebeNewsLetter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Endereco">
+      <EntityTypeMapping TypeName="FoxtrotModel.Endereco">
+        <MappingFragment StoreEntitySet="Endereco">
+          <ScalarProperty Name="idEndereco" ColumnName="idEndereco" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="nomeEndereco" ColumnName="nomeEndereco" />
+          <ScalarProperty Name="logradouroEndereco" ColumnName="logradouroEndereco" />
+          <ScalarProperty Name="numeroEndereco" ColumnName="numeroEndereco" />
+          <ScalarProperty Name="CEPEndereco" ColumnName="CEPEndereco" />
+          <ScalarProperty Name="complementoEndereco" ColumnName="complementoEndereco" />
+          <ScalarProperty Name="cidadeEndereco" ColumnName="cidadeEndereco" />
+          <ScalarProperty Name="paisEndereco" ColumnName="paisEndereco" />
+          <ScalarProperty Name="UFEndereco" ColumnName="UFEndereco" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estoque">
+      <EntityTypeMapping TypeName="FoxtrotModel.Estoque">
+        <MappingFragment StoreEntitySet="Estoque">
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="qtdProdutoDisponivel" ColumnName="qtdProdutoDisponivel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemPedido">
+      <EntityTypeMapping TypeName="FoxtrotModel.ItemPedido">
+        <MappingFragment StoreEntitySet="ItemPedido">
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="idPedido" ColumnName="idPedido" />
+          <ScalarProperty Name="qtdProduto" ColumnName="qtdProduto" />
+          <ScalarProperty Name="precoVendaItem" ColumnName="precoVendaItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pedido">
+      <EntityTypeMapping TypeName="FoxtrotModel.Pedido">
+        <MappingFragment StoreEntitySet="Pedido">
+          <ScalarProperty Name="idPedido" ColumnName="idPedido" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+          <ScalarProperty Name="dataPedido" ColumnName="dataPedido" />
+          <ScalarProperty Name="idTipoPagto" ColumnName="idTipoPagto" />
+          <ScalarProperty Name="idEndereco" ColumnName="idEndereco" />
+          <ScalarProperty Name="idAplicacao" ColumnName="idAplicacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Produto">
+      <EntityTypeMapping TypeName="FoxtrotModel.Produto">
+        <MappingFragment StoreEntitySet="Produto">
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="nomeProduto" ColumnName="nomeProduto" />
+          <ScalarProperty Name="descProduto" ColumnName="descProduto" />
+          <ScalarProperty Name="precProduto" ColumnName="precProduto" />
+          <ScalarProperty Name="descontoPromocao" ColumnName="descontoPromocao" />
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="ativoProduto" ColumnName="ativoProduto" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="qtdMinEstoque" ColumnName="qtdMinEstoque" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusPedido">
+      <EntityTypeMapping TypeName="FoxtrotModel.StatusPedido">
+        <MappingFragment StoreEntitySet="StatusPedido">
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+          <ScalarProperty Name="descStatus" ColumnName="descStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoPagamento">
+      <EntityTypeMapping TypeName="FoxtrotModel.TipoPagamento">
+        <MappingFragment StoreEntitySet="TipoPagamento">
+          <ScalarProperty Name="idTipoPagto" ColumnName="idTipoPagto" />
+          <ScalarProperty Name="descTipoPagto" ColumnName="descTipoPagto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="FoxtrotModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="loginUsuario" ColumnName="loginUsuario" />
+          <ScalarProperty Name="senhaUsuario" ColumnName="senhaUsuario" />
+          <ScalarProperty Name="nomeUsuario" ColumnName="nomeUsuario" />
+          <ScalarProperty Name="tipoPerfil" ColumnName="tipoPerfil" />
+          <ScalarProperty Name="usuarioAtivo" ColumnName="usuarioAtivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
