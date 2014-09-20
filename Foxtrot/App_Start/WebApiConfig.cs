@@ -16,7 +16,7 @@ namespace Foxtrot
         {
 
             var json = config.Formatters.JsonFormatter;
-            json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects;
+            json.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
             config.Formatters.Remove(config.Formatters.XmlFormatter);
 
             // Web API configuration and services

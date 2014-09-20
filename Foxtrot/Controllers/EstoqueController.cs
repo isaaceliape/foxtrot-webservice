@@ -9,25 +9,31 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Foxtrot.Models;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Foxtrot.Controllers
 {
+   public class EstoqueReturn{
+        public int qtdProdutoDisponivel { get; set; }
+        public string nomeProduto { get; set; }
+    }
+
     public class EstoqueController : ApiController
     {
         private FoxtrotEntities db = new FoxtrotEntities();
 
+
         // GET api/Estoque
-        public IEnumerable<Estoque> GetEstoque()
+        public List<EstoqueReturn> GetEstoque()
         {
+            List<EstoqueReturn> lstEstoque = (from estoque in db.Estoque
+                                              select new EstoqueReturn
+                                              {nomeProduto = estoque.Produto.nomeProduto,
+                                               qtdProdutoDisponivel = estoque.qtdProdutoDisponivel
+                                              }).OrderByDescending(x => x.qtdProdutoDisponivel).Take(5).ToList();
 
-            //return db.Estoque;
-
-            var listEstoque =
-            (from c in db.Estoque
-             join d in db.Produto on c.idProduto equals d.idProduto
-             select new { NomeProduto = d.nomeProduto, QuantidadeEstoque = c.qtdProdutoDisponivel }).ToList();//query incompleta
-
-            return new List<Estoque>();//isso ta errado gente
+            return lstEstoque;
         }
 
         // GET api/Estoque/5
